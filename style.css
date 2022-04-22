@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 4.8rem;
+}
+i,
+svg {
+	pointer-events: none;
+	cursor: pointer;
+}
+button {
+	padding: 1rem;
+	border: none;
+	background-color: rgb(63, 70, 77);
+	color: white;
+	transition: all 0.5s ease;
+}
+.sequencer {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.sequencer h2 {
+	margin: 5rem;
+}
+.hihat-track,
+.snare-track,
+.kick-track {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin-top: 5rem;
+}
+.controls {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+button {
+	padding: 1rem;
+	border: none;
+	background-color: rgb(63, 70, 77);
+	color: white;
+	transition: all 0.5s ease;
+}
+.controls select {
+	padding: 1rem;
+	border: none;
+}
+
+.hihat-pads,
+.snare-pads,
+.kick-pads {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
+.hihat-pad,
+.snare-pad,
+.kick-pad {
+	width: 7rem;
+	height: 7rem;
+	padding: 1rem;
+	margin: 1rem;
+}
+.hihat-pad {
+	background-color: lightskyblue;
+}
+.snare-pad {
+	background-color: burlywood;
+}
+.kick-pad {
+	background-color: lightcoral;
+}
+.hihat-pad.active {
+	background-color: rgb(26, 156, 237);
+}
+.snare-pad.active {
+	background-color: rgb(215, 141, 44);
+}
+.kick-pad.active {
+	background-color: rgb(238, 61, 61);
+}
+
+.pad {
+	transition: all 0.5s ease;
+}
+.play {
+	padding: 1rem 3rem;
+	margin-top: 8rem;
+	font-size: 2rem;
+}
+
+.tempo {
+	margin: 3rem 0;
+	width: 30%;
+}
+.tempo-range {
+	-moz-appearance: none;
+	background-color: gray;
+	padding: 0.2rem;
+  margin: 2rem 0rem 1rem;
+	border-radius: 1rem;
+	width: 100%;
+	cursor: pointer;
+}
+
+.tempo p{
+font-size: 2rem;
+text-align: center;
+margin: 2rem 0rem;
+}
+
+@keyframes play {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
